@@ -20,3 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('geena_apparel.urls', namespace='home')),
 ]
+
+admin.site.index_title = 'Geena Apparel'
+admin.site.site_header = 'Geena Apparel'
+admin.site.site_title = 'Geena Apparel'

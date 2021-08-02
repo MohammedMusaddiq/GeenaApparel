@@ -1,6 +1,47 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}{{ title }}{% endblock title %}
 {% block content %}
-    <h1>Geena Apparel</h1>
-    <h3>Users Visited: {{ user_count }}</h3>
+    <body class="min-vh-100 d-flex flex-column">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-dark bg-transparenet">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'images/logow.png' %}" alt="logo"/>
+                </a>
+                <span class="navbar-text">geenaapparel@gmail.com</span>
+            </nav>
+        </div>
+    </header>
+    <main class="my-auto">
+        <div class="container">
+            <h1 class="page-title">We're coming soon</h1>
+            <p class="page-description">
+                We work together to design, create and produce work that we are proud
+                of for folks that we believe in.
+            </p>
+            <p>Stay connected</p>
+            <nav class="footer-social-links">
+                <a
+                        href="https://www.facebook.com/geenaapparel/"
+                        class="social-link"
+                        target="_blank"
+                ><i class="mdi mdi-facebook-box"></i
+                ></a>
+                <a
+                        href="https://twitter.com/GeenaApparel"
+                        class="social-link"
+                        target="_blank"
+                ><i class="mdi mdi-twitter"></i
+                ></a>
+                <a
+                        href="https://www.instagram.com/geenaapparel/"
+                        class="social-link"
+                        target="_blank"
+                ><i class="mdi mdi-instagram"></i
+                ></a>
+            </nav>
+        </div>
+    </main>
+    </body>
 {% endblock content %}
