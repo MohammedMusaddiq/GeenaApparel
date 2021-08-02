@@ -1,0 +1,1 @@
+web: gunicorn GeenaApparelWebsite.wsgi --log-file -
